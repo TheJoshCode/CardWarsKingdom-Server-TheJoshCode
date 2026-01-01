@@ -1,5 +1,6 @@
 python -m venv cwk-venv
-call cwk-venv\Scripts\activate
+source cwk-venv/bin/activate
 pip install uv
 uv pip install -r requirements.txt
+python app.py
 deactivate

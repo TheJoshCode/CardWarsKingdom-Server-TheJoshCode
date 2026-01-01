@@ -26,8 +26,19 @@ from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 from sqlalchemy.sql import func
 import discord_webhook
 
+# added this so the config i added works, just a QOL thing
+
+config_port = 5000
+
+if os.path.exists("server_config.json"):
+    with open('server_config.json', 'r') as f:
+        config = json.load(f)
+        config_port = config.get('port', 5000)
+
 parser = argparse.ArgumentParser()
-parser.add_argument('--port', type=int, default=5000)
+
+parser.add_argument('--port', type=int, default=config_port)
+
 parser.add_argument('--debug', action='store_true')
 
 args, _ = parser.parse_known_args()
@@ -1549,5 +1560,8 @@ if __name__ == '__main__':
 	# threading
     scheduler_thread = threading.Thread(target=run_scheduler, daemon=True)
     scheduler_thread.start()
-
+    print(" DA CARDWARS SERVER IS RUNNING \n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.")
+    print(" U BETTER CATCH IT HAHAHAHA \n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.")
+    print(" GO LAUNCH THE GAME DUMMY \n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.")
+    print(" WHY YOU STILL SCROLLING BRO, GO FLOOP DA PIG \n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.")
     app.run(debug=args.debug, port=args.port)
