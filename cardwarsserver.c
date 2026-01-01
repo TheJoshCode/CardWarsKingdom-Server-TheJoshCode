@@ -16,7 +16,11 @@ int run_step(const char *description, const char *command) {
 }
 
 int main(void) {
-
+    /*if no python found, installs it*/
+    if (!run_step(
+        "CHECKING FOR PYTHON INSTALLATION",
+        "python --version || (echo Python not found. Installing... && winget install Python)"
+    )) return 1;
     if (!run_step(
         "PLAYING IN A NEW SANDBOX",
         "python -m venv cwk-venv"
