@@ -1,3 +1,51 @@
+## THIS WAS ORIGINALLY MADE BY shishkabob27, BUT IVE MADE SOME FIXES THAT WERE BLOCKING IT FROM WORKING, AND QOL IMPROVEMENTS.
+
+## HIS REPO WAS ARCHVIED, SO IM JUST REPOSTING INSTEAD OF PRING
+
+# ------------------------------------------------------
+
+# SETUP
+
+# WINDOWS
+
+```bash
+install.bat
+source cwk-venv/bin/activate
+python app.py
+```
+
+# LINUX
+```bash
+install.sh
+source cwk-venv/bin/activate
+python app.py
+```
+
+# ------------------------------------------------------
+
+# HOW CONNECT TO OWN SERVER
+
+## 1.) set both the server_url and local_server_url in Card Wars Kingdom_Data/server_settings.json to http://127.0.0.1:5000/
+
+### should look like this:
+
+<img width="646" height="165" alt="image" src="https://github.com/user-attachments/assets/9b18e824-ea03-452d-bada-ef358f42ac19" />
+
+## 2.) now just launch the game
+
+# ------------------------------------------------------
+
+
+# HOW PLAY WITH FRIEND
+
+## 1.) join a vpn network together, I use Tailscale but Hamachi also works.
+
+## 2.) set the server IP to their VPN LAN IP, in most apps itll show their IP next to their name.
+
+## 3.) launch game
+# ------------------------------------------------------
+# ORIGINAL README
+
 # Card Wars Kingdom Reversed-Engineered Server
 
 This is a reversed-engineered server for Card Wars Kingdom, designed for version 1.0.17 but it should also work with 1.19.1 available here: https://github.com/shishkabob27/CardWarsKingdom.
