@@ -9,17 +9,16 @@
 # WINDOWS
 
 ```bash
-install.bat
-source cwk-venv/bin/activate
-python app.py
+CardWarsServer.exe
 ```
+### the exe handles all the venv n stuff, made it really simple now. (not that it was crazy hard but now its a one-click launch)
 
 # LINUX
 ```bash
-install.sh
-source cwk-venv/bin/activate
-python app.py
+CardWarsServer.sh
 ```
+
+### also a one-click launch for linux.
 
 # ------------------------------------------------------
 
