@@ -24,7 +24,7 @@ CardWarsServer.sh
 
 # HOW CONNECT TO OWN SERVER
 
-## 1.) set both the server_url and local_server_url in Card Wars Kingdom_Data/server_settings.json to http://127.0.0.1:5000/
+## 1.) set both the server_url and local_server_url in Card Wars Kingdom_Data/server_settings.json to http://127.0.0.1:5000/ (or whatever port u assigned it, if u didnt change the server_config.json in the main server folder, leave it as 5000)
 
 ### should look like this:
 
@@ -42,6 +42,7 @@ CardWarsServer.sh
 ## 2.) set the server IP to their VPN LAN IP, in most apps itll show their IP next to their name.
 
 ## 3.) launch game
+
 # ------------------------------------------------------
 # ORIGINAL README
 
